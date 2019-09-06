@@ -1,11 +1,15 @@
 # Hilscher cockpit plugin template
 
-This template helps you create a cockpit plugin for the Hilscher Connect Gateway. 
+This template helps you create a cockpit plugin for the Hilscher Connect Gateway.
+
 
 enter your the Menu name you wish to have in the uiplugin/manifest.json file in the "label" value.
+
 enter the "start" file of your app in the uiplugin/manifest.json file in the "path" value.
 
+
 adjust your dockerfile accordingly
+
 
 then
 
