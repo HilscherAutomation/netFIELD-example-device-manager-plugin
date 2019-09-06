@@ -1,4 +1,4 @@
-#Hilscher cockpit plugin template
+# Hilscher cockpit plugin template
 
 This template helps you create a cockpit plugin for the Hilscher Connect Gateway. 
 
