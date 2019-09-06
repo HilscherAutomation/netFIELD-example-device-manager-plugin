@@ -1,0 +1,27 @@
+FROM balenalib/beaglebone-black:jessie
+
+WORKDIR /app
+
+COPY index.py requirements.txt ./
+
+RUN [ "cross-build-start" ]
+
+RUN apt-get update  
+RUN apt-get install python python-pip
+RUN pip install -r requirements.txt
+
+RUN [ "cross-build-end" ]  
+
+EXPOSE 5000
+
+ENV MQTT_DEFAULT_CONFIG=/etc/gateway/mqtt-config.json \
+    UI_SRC_PATH=/app/uiplugin
+
+
+# copy scripts and bootstrapper
+COPY ./bootstrapper ./bootstrapper/
+COPY ./scripts ./scripts/
+COPY ./uiplugin ./uiplugin/
+
+# On first start deploy the config-ui and on shutdown remove config-ui this is also done inside the entrypoint script
+ENTRYPOINT ["scripts/entrypoint.sh"]

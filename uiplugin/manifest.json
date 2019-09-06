@@ -1,0 +1,10 @@
+{
+    "version": 0,
+
+    "tools": {
+        "pinger": {
+            "label": "Hilscher Cockpit Demo",
+            "path": "ping.html"
+        }
+    }
+}
