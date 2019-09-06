@@ -1,0 +1,1 @@
+# cockpit_plugin_template
