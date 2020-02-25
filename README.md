@@ -1,6 +1,6 @@
 # netFIELD cockpit plugin template
 
-[![license][license-shields]][LICENSE]
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This template helps you create a cockpit plugin for the Hilscher Connect Gateway.
 
