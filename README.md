@@ -1,4 +1,7 @@
 # netFIELD cockpit plugin template
+
+[![license][license-shields]][LICENSE]
+
 This template helps you create a cockpit plugin for the Hilscher Connect Gateway.
 
 
