@@ -17,13 +17,13 @@ then
 
 ## Docker build for arm
 
-```docker build --rm -f "Dockerfile.arm32v7" -t hilschercockpitpinger:latest```
+```docker build --rm -f "Dockerfile.arm32v7" -t hilschercockpitpinger:latest .```
 
 or
 
 ## Docker build for x86
 
-```docker build --rm -f "Dockerfile.x86" -t hilschercockpitpinger:latest```
+```docker build --rm -f "Dockerfile.x86" -t hilschercockpitpinger:latest .```
 
 then
 
