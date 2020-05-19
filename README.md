@@ -36,7 +36,7 @@ docker run \
 ```
 ## For integration into the netFIELD.io Container Manager ...
 
-add the following Container create opiions into the *Container Create* tab
+add the following Container create options into the *Container Create* tab
 
 ```
 {
