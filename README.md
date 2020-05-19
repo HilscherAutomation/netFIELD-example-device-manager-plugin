@@ -34,3 +34,17 @@ docker run \
     -v /etc/gateway/mqtt-config.json:/etc/gateway/mqtt-config.json:ro \
     hilschercockpitpinger:latest
 ```
+## For integration into the netFIELD.io Container Manager ...
+
+add the following Container create opiions into the *Container Create* tab
+
+```
+{
+  "HostConfig": {
+    "Binds": [
+      "/usr/local/share/cockpit:/usr/local/share/cockpit",
+      "/etc/gateway/mqtt-config.json:/etc/gateway/mqtt-config.json:ro"
+    ]
+  }
+}
+```
