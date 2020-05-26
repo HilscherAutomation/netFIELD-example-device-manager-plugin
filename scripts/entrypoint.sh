@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/sh +e
 # script is necessary to catch all signals as PID 1 in a container
 
 set -x
