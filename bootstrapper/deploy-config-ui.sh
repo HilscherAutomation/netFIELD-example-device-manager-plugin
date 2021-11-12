@@ -3,7 +3,7 @@ set -x
 echo "create service-endpoint.js"
 
 IP=$(ip addr  show dev eth0 | grep -Eo "inet \d*.\d*.\d*.\d" |  grep -Eo "(\d.*)*")
-echo "our ip is: $IP"
+echo "our ip is: "$IP
 
 echo "var serviceEndpoint = { \
   \"address\": $IP, \
